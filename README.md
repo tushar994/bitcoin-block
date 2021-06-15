@@ -1,5 +1,13 @@
 # BITCOIN-BLOCK
 
+## To run
+
+run
+
+```shell
+python main.py
+```
+
 ## Problem
 
 The problem here is to construct a bitcoin block by selecting a set of transactions from the mempool. The fee is to be maximised.
@@ -33,7 +41,7 @@ Some ways in which we could account for this would be-
 - add some factor the fee:weight ratio of a transaction based on how good its children are.
 - instead of only considering individual transactions in the above algorithm, start considering sets of transactions (of variable length) too, and if a set is really good, just add the whole set at once.
 
-## Design Decisions
+## Design
 
 There are many ways the design of this code can be made better.
 
